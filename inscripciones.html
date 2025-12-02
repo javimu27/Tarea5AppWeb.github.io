@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Inscripciones Innovatec</title>
+</head>
+<body>
+    <form action="./submit_page" method="get">
+    <h2>Inscríbase a alguno de nuestros cursos</h2>
+        <p>
+            <label for="name">Nombre y apellido (obligatorio):</label>
+            <input type="text" name="name" id="name" required />
+        </p>
+        <p>
+            <label for="email">Correo electrónico (obligatorio):</label>
+            <input type="email" name="email" id="email" required />
+        </p>
+    <form action="./payment_page" method="get"> <!--Esto creo que no sirve porque señala donde va a ir el formulario una vez lo acabes y lo envíes-->
+        <p>
+            <fieldset>
+                <legend>Elija el curso (obligatorio):</legend>
+
+                    <input type="radio" id="cursoChoice1" name="curso" value="Seguridad Informática" />
+                    <label for="cursoChoice1">Seguridad Informática</label>
+
+                    <input type="radio" id="cursoChoice2" name="curso" value="Redes" />
+                    <label for="cursoChoice2">Redes</label>
+
+                    <input type="radio" id="cursoChoice3" name="curso" value="Programación" />
+                    <label for="cursoChoice3">Programación</label>
+
+                    <input type="radio" id="cursoChoice4" name="curso" value="Ofimática"  />
+                    <label for="cursoChoice4">Ofimática</label>
+<!--fieldset agrupa varios elementos relacionados dentro de un mismo formulario -->
+<!--legend es el titulo del fieldset-->
+<!--input type= radio es un botón para elegir una opción entre varias-->
+<!--label for= curso1 es el texto que describe el input.-->
+<!--id identifica el input, permite enlazarlo con el label-->
+<!--name une varios radios en un mismo grupo-->
+<!--value es el valor que se enviará cuando se seleccione esa opción-->
+<!--checked (que no lo he puesto) marca una opción del formulario por defecto-->
+<!--required hace que sea obligatorio rellenar o marcar un campo en el formulario-->
+<!--form action="./payment_page" method="get"
+    form	                  Inicio del formulario (todo dentro se enviará).
+    action="./payment_page"	  Página o archivo que recibirá los datos enviados.
+    method="get"	          Los datos se envían en la URL (visibles).
+no lo he puesto porque no lo he entendido bien y creo que no es necesario-->
+            </fieldset>
+        </p>
+        <p>
+            <button>Entregar inscripción</button>
+        </p>
+</form>
+</body>
+<footer>
+    <nav>
+        <a href="index.html">Cursos</a>
+        <a href="inscripciones.html">Inscripciones</a>
+    </nav>
+</footer>
